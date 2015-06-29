@@ -1,0 +1,27 @@
+{
+  "name": "tiy-upvote",
+  "dependencies": {
+    "bootstrap-sass": "3.3.4",
+    "modernizr": "~2.8.1",
+    "angular": "~1.4.1",
+    "angular-route": "~1.4.1",
+    "restangular": "~1.5.1"
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/jorgehjr84/TIY-Upvote",
+  "authors": [
+    "Jorge Hernandez <jorge_l_hernandez@yahoo.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
