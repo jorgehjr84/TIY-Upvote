@@ -17,7 +17,10 @@
   });
 
   app.controller('QuestionsController', function($routeParams, Restangular){
+    var self = this;
 
+    Restangular.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com')
+      .one('user', 'username').put('gatorpazz');
   });
 
 
