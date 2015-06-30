@@ -11,5 +11,5 @@ app.config(function(RestangularProvider) {
 
 
 app.controller('MainController', function($route, Restangular) {
-  Restangular.one('name.json').put('test');
+  Restangular.one(name.json).put(test);
 });
