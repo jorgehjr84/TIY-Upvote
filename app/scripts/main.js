@@ -28,10 +28,14 @@
     $routeProvider.otherwise('/questions');
   });
 
+  app.config(function(RestangularProvider){
+    RestangularProvider.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com');
+  });
+
   app.controller('QuestionsController', function(Restangular){
     var self = this;
 
-    Restangular.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com')
+    Restangular
       .one('user').put('{ "username": "gatorpazz" }');
   });
 
