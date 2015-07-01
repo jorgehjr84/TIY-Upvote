@@ -11,21 +11,25 @@
 
     $routeProvider.when('/selected', {
       templateUrl: 'views/selected.html',
-      controller: 'ViewQuestionController',
-      controllerAs: 'selectedQuestion'
+      // controller: 'ViewQuestionController',
+      // controllerAs: 'selectedQuestion'
     });
 
     $routeProvider.when('/submit', {
       templateUrl: 'views/submit.html',
-      controller: 'SubmitController',
-      controllerAs: 'submission'
+      // controller: 'SubmitController',
+      // controllerAs: 'submission'
     });
 
     $routeProvider.when('/404', {
       templateUrl: 'views/404.html'
     });
 
-    $routeProvider.otherwise('/questions');
+    $routeProvider.when('/', {
+      redirectTo: '/questions'
+    });
+
+    $routeProvider.otherwise('/404');
   });
 
   app.config(function(RestangularProvider){
