@@ -9,7 +9,7 @@
       controllerAs: 'question'
     });
 
-    $routeProvider.when('/user', {
+    $routeProvider.when('/users/:user', {
       templateUrl: 'views/user.html',
       // controller: 'UsersController',
       // controllerAs: 'user'
