@@ -11,6 +11,14 @@ from 'wiredep';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+var ngAnnotate = require('gulp-ng-annotate');
+
+gulp.task('gulp-ng-annotate', function(){
+  return gulp.src('app/scripts/*.js')
+    .pipe(ngAnnotate())
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -56,12 +64,12 @@ const testLintOptions = {
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
-gulp.task('html', ['styles'], () => {
+gulp.task('html', ['styles', 'gulp-ng-annotate'], () => {
   const assets = $.useref.assets({
     searchPath: ['.tmp', 'app', '.']
   });
 
-  return gulp.src('app/*.html')
+  return gulp.src('app/**/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({
