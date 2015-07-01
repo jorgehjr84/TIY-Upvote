@@ -42,7 +42,7 @@
   },
   "name": "tiy-upvote",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
@@ -78,7 +78,7 @@
     "url": "git+https://github.com/jorgehjr84/TIY-Upvote.git"
   },
   "author": "Jorge Hernandez",
-  "license": "ISC",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/jorgehjr84/TIY-Upvote/issues"
   },
