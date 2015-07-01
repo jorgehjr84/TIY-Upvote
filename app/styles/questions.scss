@@ -4,7 +4,13 @@
     @extend .col-md-8;
   }
   .sideBar{
-    @extend .col-md-2;
-    
+    @extend .col-md-3;
+    display: block;
+
+  }
+  .adSection{
+    border: .25em solid orange;
+    border-top: 2em solid orange;
+
   }
 };
