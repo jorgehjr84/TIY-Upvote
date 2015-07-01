@@ -4,6 +4,21 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+//Styles for 404 page
+.error-box {
+  border: 1px solid white;
+  width: 320px;
+  height: 140px;
+  display: inline-block;
+
+  .error-stuff {
+    text-align: center;
+    display: inline-block;
+  }
+
+}
+
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
