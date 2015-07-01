@@ -8,6 +8,18 @@
     display: block;
 
   }
+  .stats {
+    display: block;
+    @extend  .col-md-1;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+    big {
+      font-size: 3ex;
+    }
+
+  }
+
   .adSection{
     border: .25em solid orange;
     border-top: 2em solid orange;
