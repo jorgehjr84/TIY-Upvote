@@ -1,3 +1,15 @@
 .container-fluid {
   max-width: 80%;
 }
+
+.head {
+  margin-bottom: 1.5em;
+
+  img {
+    vertical-align: bottom;
+  }
+
+  a {
+    display: inline-block;
+  }
+}

@@ -23,23 +23,21 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="container-fluid">
-      <nav class="row">
-        <div class="pull-left">
-          <img src="logo.png" height="auto" width="50" style="vertical-align: bottom;">
-          <a href="#questions" style="display: inline-block;">
-              <big style="font-size: 1.5em;">stack</big><br>
-              <small style="font-size: 1em;">overtroll</small>
-          </a>
-        </div>
-        <ul class="nav nav-pills pull-right">
-          <li><a href="#questions">Questions</a></li>
-          <li><a href="#selected">Detail</a></li>
-          <li><a href="#submit">Ask Question</a></li>
-        </ul>
-      </nav>
+    <header class="container-fluid head">
+      <div class="pull-left">
+        <img src="logo.png" height="auto" width="50">
+        <a href="#questions">
+            <big style="font-size: 1.5em;">stack</big><br>
+            <small style="font-size: 1em;">overtroll</small>
+        </a>
+      </div>
+      <ul class="nav nav-pills pull-right">
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#selected">Detail</a></li>
+        <li><a href="#submit">Ask Question</a></li>
+      </ul>
     </header>
-    <main class="container" ng-view>
+    <main class="container-fluid" ng-view>
     </main>
     <footer>
 
