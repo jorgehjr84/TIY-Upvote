@@ -1,7 +1,10 @@
 .questions-page{
   @extend row;
-
-  .mainBarMenus{
-    @extend col-md-6;
+  .mainBar{
+    @extend .col-md-8;
+  }
+  .sideBar{
+    @extend .col-md-2;
+    
   }
 };
