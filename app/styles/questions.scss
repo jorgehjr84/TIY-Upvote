@@ -1,0 +1,7 @@
+.questions-page{
+  @extend row;
+
+  .mainBarMenus{
+    @extend col-md-6;
+  }
+};
