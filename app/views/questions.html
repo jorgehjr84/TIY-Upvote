@@ -23,7 +23,7 @@
           <small>votes</small><br>
         </span>
         <span>
-        <big>questions.answers.length</big><br>
+        <big>{{question.inquiry[0].answers.length}}</big><br>
         <small>answers</small><br>
         </span>
         <span>
@@ -34,17 +34,17 @@
       <div class="questionSummary">
         <div class="statsContainer">
         </div>
-        <h4>question.synopsis</h4>
-        <p>question.body</p>
+        <h4>{{question.inquiry[0].synopsis}}</h4>
+        <p>{{question.inquiry[0].body}}</p>
         <div class="pull-right">
-          <author>question.created_by</author>
-          <time>question.timestamp</time>
+          <author>{{question.inquiry[0].created_by}}</author>
+          <time>{{question.inquiry[0].timestamp}}</time>
         </div>
       </div>
     </section>
     <!--End of Main Bar -->
     <div class="sideBar">
-      <h2 class="numberOfQuestions">questions.length</h2>
+      <h2 class="numberOfQuestions">{{question.inquiry.length}}</h2>
       <h4>questions</h4>
 
 

@@ -3,16 +3,13 @@
   angular.module('tiy-upvote')
     .controller('QuestionsController', function(){
       // var self = this;
-
-
       var questions = [
           { "synopsis": "Questions about using the command line",
-            "body": "I'm struggling to learn how to use the command line. Can someone explain
-             how I make a new directory?",
+            "body": "I'm struggling to learn how to use the command line. Can someone explain how I make a new directory?",
             "created_by": "pcreglow",
             "timestamp": "Jul 02 15",
             "question_id": "12398732",
-            "Answers": [
+            "answers": [
               {"answer_id": "12389774",
                "body": "mkdir motherfucker",
                "created_by": "sjoyal",
@@ -28,7 +25,7 @@
             "created_by": "gatorpazz",
             "timestamp": "Jul 01 15",
             "question_id": "12988732",
-            "Answers": [
+            "answers": [
               {"answer_id": "10989774",
                "body": "git flow sucks, it's not vim and I hate it",
                "created_by": "al-the-x",
@@ -37,9 +34,10 @@
                "body": "al-the-x is trolling like usual",
                "created_by": "jessyriordan",
                "timestamp": "Jul 01 15"}
-             ]
-           }
+             ]}
          ];
+
+      this.inquiry = questions;
       // Restangular
       //   .one('user').put('{ "username": "gatorpazz" }');
     });
