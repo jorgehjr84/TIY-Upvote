@@ -23,9 +23,9 @@
       });
 
       $routeProvider.when('/questions/:question', {
-        templateUrl: 'views/selected.html'
-        // controller: 'SelectedController',
-        // controllerAs: 'selected'
+        templateUrl: 'views/selected.html',
+        controller: 'SelectedController',
+        controllerAs: 'selected'
       });
 
       $routeProvider.when('/404', {

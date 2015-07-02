@@ -1,11 +1,13 @@
 <h1>{{selected.question.synopsis}}</h1>
 <section>
   <p>{{selected.question.body}}</p>
+  <author>{{selected.question.created_by}}</author>
 </section>
 <section class="answers">
-  <h2>{{selected.questions.question.answers.length}} Answers</h2>
-  <div>
-    <p>{{selected.questions.answers.answer.body}}</p> <!--End of answer text-->
+  <h2>{{selected.question.answers.length}} Answers</h2>
+  <div ng-repeat="answer in selected.question.answers">
+    <p>{{answer.body}}</p>
+    <author>{{answer.created_by}}</author> <!--End of answer text-->
   </div> <!--End of a single answer-->
 </section>
 <form class="answer-form">
