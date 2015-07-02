@@ -1,4 +1,6 @@
-(function(window){
+/* global angular */
+(function(){
+'use strict';
 
   var app = angular.module('tiy-upvote', [ 'ngRoute', 'restangular' ]);
 
@@ -10,19 +12,19 @@
     });
 
     $routeProvider.when('/users/:user', {
-      templateUrl: 'views/user.html',
+      templateUrl: 'views/user.html'
       // controller: 'UsersController',
       // controllerAs: 'user'
     });
 
     $routeProvider.when('/questions/ask', {
-      templateUrl: 'views/submit.html',
+      templateUrl: 'views/submit.html'
       // controller: 'SubmitController',
       // controllerAs: 'submission'
     });
 
     $routeProvider.when('/questions/:question', {
-      templateUrl: 'views/selected.html',
+      templateUrl: 'views/selected.html'
       // controller: 'ViewQuestionController',
       // controllerAs: 'selectedQuestion'
     });
@@ -42,16 +44,11 @@
     RestangularProvider.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com');
   });
 
-  app.controller('QuestionsController', function(Restangular){
-    var self = this;
+  app.controller('QuestionsController', function(){
+    // var self = this;
     // Restangular
     //   .one('user').put('{ "username": "gatorpazz" }');
   });
-
-
-
-
-
 
 
 })(window);
