@@ -1,0 +1,18 @@
+.main-top {
+  margin-bottom: 2em;
+}
+
+.user-activity {
+  padding-left: 0;
+
+  .user-stat {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.posts {
+  nav {
+    @extend .clearfix;
+  }
+}
