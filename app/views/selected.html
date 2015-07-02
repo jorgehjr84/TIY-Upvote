@@ -1,11 +1,11 @@
-<h1>{{question.synopsis}}</h1>
+<h1>{{selected.question.synopsis}}</h1>
 <section>
-  <p>{{question.body}}</p>
+  <p>{{selected.question.body}}</p>
 </section>
 <section class="answers">
-  <h2>{{questions.question.answers.length}} Answers</h2>
+  <h2>{{selected.questions.question.answers.length}} Answers</h2>
   <div>
-    <p>{{questions.answers.answer.body}}</p> <!--End of answer text-->
+    <p>{{selected.questions.answers.answer.body}}</p> <!--End of answer text-->
   </div> <!--End of a single answer-->
 </section>
 <form class="answer-form">

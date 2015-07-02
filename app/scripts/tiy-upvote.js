@@ -25,7 +25,7 @@
       $routeProvider.when('/questions/:question', {
         templateUrl: 'views/selected.html'
         // controller: 'SelectedController',
-        // controllerAs: 'selectedQuestion'
+        // controllerAs: 'selected'
       });
 
       $routeProvider.when('/404', {
