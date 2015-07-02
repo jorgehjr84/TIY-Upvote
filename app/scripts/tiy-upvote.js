@@ -37,10 +37,14 @@
       });
 
       $routeProvider.otherwise('/404');
-    });
+    })
 
-      .config(function(RestangularProvider){
-        RestangularProvider.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com');
+    .config(function(RestangularProvider){
+      RestangularProvider.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com');
+    })
+
+    .controller('MainController', function(){
+      
     });
 
 })(window);
