@@ -44,7 +44,7 @@
     })
 
     .controller('MainController', function(){
-      
+
     });
 
-})(window);
+})();
