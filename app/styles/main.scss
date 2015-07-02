@@ -1,8 +1,24 @@
 $icon-font-path: '../fonts/';
-
+@import "questions";
+@import "selected";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+//Styles for 404 page
+.error-box {
+  border: 1px solid white;
+  width: 320px;
+  height: 140px;
+  display: inline-block;
+
+  .error-stuff {
+    text-align: center;
+    display: inline-block;
+  }
+
+}
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -14,7 +30,7 @@ $icon-font-path: '../fonts/';
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
