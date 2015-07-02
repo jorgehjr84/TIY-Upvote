@@ -9,15 +9,17 @@
 
   }
   .stats {
-    display: block;
     @extend  .col-md-2;
+    clear: left;
     padding-top: 1em;
     padding-bottom: 2em;
     text-align: center;
     big {
       font-size: 3ex;
     }
-
+  }
+  .question-summary {
+    padding-top: .5em;
   }
 
   .adSection{
