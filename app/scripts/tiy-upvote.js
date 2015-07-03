@@ -45,9 +45,11 @@
 
     .controller('MainController', function(){
       var firebase = new Firebase('https://gatorpazz-tiy-upvote.firebaseio.com');
-      firebase.authWithOAuthPopup('github', function(error, auth){
-        console.log(arguments);
-      });
+      this.login = function(){
+        firebase.authWithOAuthPopup('github', function(error, auth){
+          console.log(arguments);
+        });
+      }
     });
-    
+
 })();
