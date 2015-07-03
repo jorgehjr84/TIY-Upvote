@@ -57,7 +57,6 @@
       }; // END this.login
       this.setUser = function(){
         return self.username !== 0;
-        console.log('hello');
       }; // this.setUser
     }); // END MainController
 
