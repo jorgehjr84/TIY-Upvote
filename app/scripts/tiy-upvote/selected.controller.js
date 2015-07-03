@@ -2,7 +2,7 @@
 
   angular.module('tiy-upvote')
     .controller('SelectedController', function(){
-      this.question = {
+      // this.question = {
       //   "synopsis": "How do I do this?",
       //   "body": "I really don't know how to do this, how do I do this?",
       //   "created_by": "sjoyal",

@@ -10,4 +10,5 @@
           console.log(response.data);
           self.inquiries = response.data;
         });
+      });
 })();
