@@ -1,11 +1,11 @@
 <h1>{{selected.question.synopsis}}</h1>
-<section>
+<section class='well well-sm'>
   <p>{{selected.question.body}}</p>
   <author>{{selected.question.created_by}}</author>
 </section>
-<section class="answers">
+<section>
   <h2>{{selected.question.answers.length}} Answers</h2>
-  <div ng-repeat="answer in selected.question.answers">
+  <div class='well well-sm' ng-repeat="answer in selected.question.answers">
     <p>{{answer.body}}</p>
     <author>{{answer.created_by}}</author> <!--End of answer text-->
   </div> <!--End of a single answer-->

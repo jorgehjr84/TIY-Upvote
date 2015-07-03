@@ -8,6 +8,12 @@ $icon-font-path: '../fonts/';
 // endbower
 
 //Styles for 404 page
+body {
+  background-color: #e7e4e4;
+}
+#phil-input {
+  margin-bottom: 3ex;
+}
 .error-box {
   border: 1px solid white;
   width: 320px;
