@@ -43,8 +43,21 @@
       RestangularProvider.setBaseUrl('https://gatorpazz-tiy-upvote.firebaseio.com');
     })
 
-    .controller('MainController', function(){
-
-    });
+    .controller('MainController', function($scope){
+      var firebase = new Firebase('https://gatorpazz-tiy-upvote.firebaseio.com');
+      this.username = 0;
+      var self = this;
+      this.login = function(){
+        firebase.authWithOAuthPopup('github', function(error, authData){
+          console.log(arguments);
+          $scope.$apply(function(){
+            self.username = authData.github.username;
+          }); // END $scope
+        }); // END authWithOAuthPopup
+      }; // END this.login
+      this.setUser = function(){
+        return self.username !== 0;
+      }; // this.setUser
+    }); // END MainController
 
 })();
