@@ -9,9 +9,5 @@
         .then(function(response) {
           console.log(response.data);
           self.inquiries = response.data;
-        })
-
-      // Restangular
-      //   .one('user').put('{ "username": "gatorpazz" }');
-    });
+        });
 })();

@@ -1,34 +1,98 @@
-[
-    { "synopsis": "Questions about using the command line",
-      "body": "I'm struggling to learn how to use the command line. Can someone explain how I make a new directory?",
-      "created_by": "pcreglow",
-      "timestamp": "Jul 02 15",
-      "question_id": "12398732",
-      "answers": [
-        {"answer_id": "12389774",
-         "body": "mkdir motherfucker",
-         "created_by": "sjoyal",
-         "timestamp": "Jul 02 15"},
-        {"answer_id": "58675869",
-         "body": "what sjoyal said +1",
-         "created_by": "jorgehjr84",
-         "timestamp": "Jul 02 15"}
-       ]
-     },
-    {"synopsis": "Benefits of using git flow for development",
-      "body": "My team is trying to adopt git best practices, what are the pros and cons?",
-      "created_by": "gatorpazz",
-      "timestamp": "Jul 01 15",
-      "question_id": "12988732",
-      "answers": [
-        {"answer_id": "10989774",
-         "body": "git flow sucks, it's not vim and I hate it",
-         "created_by": "al-the-x",
-         "timestamp": "Jul 01 15"},
-        {"answer_id": "58684369",
-         "body": "al-the-x is trolling like usual",
-         "created_by": "jessyriordan",
-         "timestamp": "Jul 01 15"}
-       ]
-     }
-]
+[{
+  "synopsis": "Questions about using the command line",
+  "body": "I'm struggling to learn how to use the command line. Can someone explain how I make a new directory?",
+  "created_by": "pcreglow",
+  "timestamp": "Jul 02 15",
+  "question_id": "12398732",
+  "answers": [{
+    "answer_id": "12389774",
+    "body": "mkdir motherfucker",
+    "created_by": "sjoyal",
+    "timestamp": "Jul 02 15"
+  }, {
+    "answer_id": "58675869",
+    "body": "what sjoyal said +1",
+    "created_by": "jorgehjr84",
+    "timestamp": "Jul 02 15"
+  }]
+}, {
+  "synopsis": "Benefits of using git flow for development",
+  "body": "My team is trying to adopt git best practices, what are the pros and cons?",
+  "created_by": "gatorpazz",
+  "timestamp": "Jul 01 15",
+  "question_id": "12988732",
+  "answers": [{
+    "answer_id": "10989774",
+    "body": "git flow sucks, it's not vim and I hate it",
+    "created_by": "al-the-x",
+    "timestamp": "Jul 01 15"
+  }, {
+    "answer_id": "58684369",
+    "body": "al-the-x is trolling like usual",
+    "created_by": "jessyriordan",
+    "timestamp": "Jul 01 15"
+  }]
+}, {
+  "synopsis": "Was Jorge studying....",
+  "body": "Angular forms for this project or his final project?",
+  "created_by": "sjoyal",
+  "timestamp": "Jul 02 15",
+  "question_id": "12988733",
+  "answers": [{
+    "answer_id": "10989775",
+    "body": "Is there a difference?",
+    "created_by": "jorgehjr_84",
+    "timestamp": "Jul 02 15"
+  }]
+}, {
+  "synopsis": "How do you use atom?",
+  "body": "I am getting really frustrated with atom..... urgh.",
+  "created_by": "sjoyal",
+  "timestamp": "Jul 02 15",
+  "question_id": "12988734",
+  "answers": []
+}, {
+  "synopsis": "How do I turn off my computer?",
+  "body": "I am having diffuculty turning off my computer. Is there a button I push? Do I wait for the battery to die? HELP! ",
+  "created_by": "melrodbos",
+  "timestamp": "Jul 02 15",
+  "question_id": "12988735",
+  "answers": [{
+    "answer_id": "10989775",
+    "body": "Well, how did you turn it on? Have you googled it?",
+    "created_by": "al-the-x",
+    "timestamp": "Jul 02 15"
+  }, {
+    "answer_id": "58684445",
+    "body": "How do I turn you on?",
+    "created_by": "gatorpazz",
+    "timestamp": "Jul 02 15"
+  }, {
+    "answer_id": "58684446",
+    "body": "Hit the button.",
+    "created_by": "jorgehjr_84",
+    "timestamp": "Jul 02 15"
+  }, {
+    "answer_id": "58684444",
+    "body": "WTF, are you stupid?",
+    "created_by": "gatorpazz",
+    "timestamp": "Jul 02 15"
+  }]
+}, {
+  "synopsis": "What should I have to drink?",
+  "body": "I am thirsty. Should I have mocha or chai?",
+  "created_by": "kmattiko",
+  "timestamp": "Jul 02 15",
+  "question_id": "12988736",
+  "answers": [{
+    "answer_id": "10999775",
+    "body": "Well, have you googled it?",
+    "created_by": "al-the-x",
+    "timestamp": "Jul 02 15"
+  }, {
+    "answer_id": "58694445",
+    "body": "Why not both?",
+    "created_by": "gatorpazz",
+    "timestamp": "Jul 02 15"
+  }]
+}]
