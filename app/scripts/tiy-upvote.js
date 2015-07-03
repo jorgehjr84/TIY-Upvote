@@ -45,6 +45,7 @@
 
     .controller('MainController', function($scope){
       var firebase = new Firebase('https://gatorpazz-tiy-upvote.firebaseio.com');
+      this.username = 0;
       var self = this;
       this.login = function(){
         firebase.authWithOAuthPopup('github', function(error, authData){
@@ -54,6 +55,10 @@
           }); // END $scope
         }); // END authWithOAuthPopup
       }; // END this.login
+      this.setUser = function(){
+        return self.username !== 0;
+        console.log('hello');
+      }; // this.setUser
     }); // END MainController
 
 })();
