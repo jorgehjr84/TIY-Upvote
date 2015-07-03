@@ -155,8 +155,7 @@ gulp.task('serve:dist', () => {
     server: {
       baseDir: ['dist'],
       routes: {
-        '/bower_components': 'bower_components',
-        '/api': 'api'
+        '/bower_components': 'bower_components'
       }
     }
   });
