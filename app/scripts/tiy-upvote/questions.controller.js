@@ -1,9 +1,10 @@
+/* global: angular */
 (function(){
-
+  'use strict';
   angular.module('tiy-upvote')
     .controller('QuestionsController', function($http){
       var self = this;
-      var inquiries = [];
+      this.inquiries = [];
 
       $http.get('/api/gatorpazz-tiy-upvote/questions/dummyData.json')
         .then(function(response) {
