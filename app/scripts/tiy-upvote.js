@@ -1,6 +1,6 @@
-/* global angular */
+/* global angular Firebase */
 (function(){
-'use strict';
+  'use strict';
 
   angular.module('tiy-upvote', [ 'ngRoute', 'restangular' ])
     .config(function($routeProvider){
