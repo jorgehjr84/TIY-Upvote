@@ -12,7 +12,7 @@
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jorgehjr84/TIY-Upvote",
   "authors": [
     "Jorge Hernandez <jorge_l_hernandez@yahoo.com>"
