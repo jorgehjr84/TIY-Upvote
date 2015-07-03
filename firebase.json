@@ -1,9 +1,6 @@
 {
   "firebase": "gatorpazz-tiy-upvote",
-  "public": [
-    "dist",
-    "api"
-  ],
+  "public": "dist",
   "ignore": [
     "firebase.json",
     "**/.*",
