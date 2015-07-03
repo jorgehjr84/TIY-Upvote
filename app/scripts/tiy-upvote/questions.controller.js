@@ -1,8 +1,8 @@
 /* global angular */
-(function() {
+(function(){
   'use strict';
   angular.module('tiy-upvote')
-    .controller('QuestionsController', function($http) {
+    .controller('QuestionsController', function($http){
       var self = this;
       this.inquiries = [];
 
@@ -11,12 +11,12 @@
       //     console.log(response.data);
       //     self.inquiries = response.data;
       //});
-      //End of Dummy Data
+      // End of Dummy Data
+
       $http.get('https://gatorpazz-tiy-upvote.firebaseio.com/.json')
         .then(function(response) {
           console.log(response.data);
           self.inquiries = response.data;
         });
-
-    }); //End of QuestionsController
+    }); // End of QuestionsController
 })();
