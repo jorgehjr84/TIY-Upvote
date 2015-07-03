@@ -23,23 +23,26 @@
 
 <body>
 
-  <header class="container-fluid head">
+  <header class="container-fluid head" ng-controller="MainController as app">
     <div class="pull-left logo">
       <a href="#questions">
         <img src="logo.png" height="auto" width="50">
       </a>
       <a href="#questions">
-        <big style="font-size: 1.5em;">stack</big>
+        <big>stack</big>
         <br>
-        <small style="font-size: 1em;">overTroll</small>
+        <small>overTroll</small>
       </a>
-    </div>
+    </div> <!-- .logo -->
     <ul class="nav nav-pills pull-right">
       <li><a href="#questions">Questions</a></li>
-      <li><a href="#users/:user">User</a></li>
+      <!-- <li><a href="#users/:user">User</a></li> -->
       <li><a href="#questions/:question">Detail</a></li>
       <li><a href="#questions/ask">Ask Question</a></li>
-    </ul>
+      <li ng-hide="app.setUser()"><a href="#questions" ng-click="app.login()">Log In</a></li>
+      <li ng-show="app.setUser()"><a href="#users/:user">Hello, {{app.username}}!</a></li>
+      <!-- <li ng-show="app.setUser()" class="hello"><small>Hello, {{app.username}}!</small></li> -->
+    </ul> <!-- .nav .nav-pills .pull-right -->
   </header>
   <main class="container-fluid" ng-view>
   </main>
@@ -73,7 +76,9 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
+  <script src="scripts/tiy-upvote.js"></script>
+  <script src="scripts/tiy-upvote/questions.controller.js"></script>
+  <script src="scripts/tiy-upvote/selected.controller.js"></script>
   <!-- endbuild -->
 </body>
 

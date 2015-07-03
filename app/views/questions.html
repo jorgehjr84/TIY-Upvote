@@ -17,32 +17,36 @@
         </ul>
 
       </nav>
-      <div class="stats">
-        <span>
-          <big>0</big><br>
-          <small>votes</small><br>
-        </span>
-        <span>
-        <big>0</big><br>
-        <small>answers</small><br>
-        </span>
-        <span>
-          <big>2</big><br>
-          <small>views</small>
-        </span>
-      </div>
-      <div class="questionSummary">
-        <div class="statsContainer">
+      <section class="row well" ng-repeat="inquiry in question.inquiries">
+        <div class="stats">
+          <span>
+            <big>0</big><br>
+            <small>votes</small><br>
+          </span>
+          <span>
+          <big>{{inquiry.answers.length}}</big><br>
+          <small>answers</small><br>
+          </span>
+          <span>
+            <big>2</big><br>
+            <small>views</small>
+          </span>
         </div>
-        <h4>Why is Gob so awesome?</h4>
-        <p>I'm gonna build me an airport, put my name on it. Why, Michael? So you can fly away from your feelings? What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. Sorry, some of my students
-          are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point. A lady of the evening. Working girl. She turns illusions for money. Ann, you need to decide whether you want
-          a man or a boy. I know how I'd answer. Coo coo ca chaw. Coo coo ca chaw. Coo coo ca chaw. Butterscotch! Want a lick?</p>
-      </div>
+        <div class="question-summary">
+          <div class="statsContainer">
+          </div>
+          <h4>{{inquiry.synopsis}}</h4>
+          <p>{{inquiry.body}}</p>
+          <div class="pull-right">
+            <author>{{inquiry.created_by}}</author>
+            <time>{{inquiry.timestamp}}</time>
+          </div>
+        </div>
+      </section> <!-- end section ng-repeat -->
     </section>
     <!--End of Main Bar -->
     <div class="sideBar">
-      <h2 class="numberOfQuestions">9,690,281</h2>
+      <h2 class="numberOfQuestions">{{question.inquiries.length}}</h2>
       <h4>questions</h4>
 
 
