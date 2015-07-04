@@ -17,7 +17,7 @@
         </ul>
 
       </nav>
-      <section class="row well" ng-repeat="inquiry in question.inquiries">
+      <section class="row well stuff" ng-repeat="inquiry in question.inquiries">
         <div class="stats">
           <span>
             <big>0</big><br>
@@ -35,7 +35,7 @@
         <div class="question-summary">
           <div class="statsContainer">
           </div>
-          <h4><a href="#questions/{{inquiry.synopsis}}">{{inquiry.synopsis}}</a></h4>
+          <h4 class="click-here"><a href="#questions/{{inquiry.synopsis}}">{{inquiry.synopsis}}</a></h4>
           <p>{{inquiry.body}}</p>
           <div class="pull-right">
             <author>{{inquiry.created_by}}</author>
