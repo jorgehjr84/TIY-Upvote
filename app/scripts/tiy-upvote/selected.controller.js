@@ -3,7 +3,7 @@
   'use strict';
 
   angular.module('tiy-upvote')
-    .controller('SelectedController', function($http){
+    .controller('SelectedController', function($http, $routeParams){
       var self = this;
       this.inquiry = [];
 
@@ -15,10 +15,11 @@
       // });
       // END dummyData
 
-      $http.get('https://gatorpazz-tiy-upvote.firebaseio.com/.json')
+      $http.get('https://gatorpazz-tiy-upvote.firebaseio.com/answers/' + $routeParams.question + '/.json')
         .then(function(response) {
           console.log(response.data);
           self.inquiry = response.data;
         });
+      console.log($routeParams);
     }); // END SelectedController
 })();

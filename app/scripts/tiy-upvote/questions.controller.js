@@ -13,7 +13,7 @@
       //});
       // End of Dummy Data
 
-      $http.get('https://gatorpazz-tiy-upvote.firebaseio.com/.json')
+      $http.get('https://gatorpazz-tiy-upvote.firebaseio.com/questions/.json')
         .then(function(response) {
           console.log(response.data);
           self.inquiries = response.data;
