@@ -24,7 +24,7 @@
             <small>votes</small><br>
           </span>
           <span>
-          <big>{{inquiry.answers.length}}</big><br>
+          <big>{{inquiry.answerNumber}}</big><br>
           <small>answers</small><br>
           </span>
           <span>
@@ -35,7 +35,7 @@
         <div class="question-summary">
           <div class="statsContainer">
           </div>
-          <h4 class="click-here"><a href="#questions/{{inquiry.synopsis}}">{{inquiry.synopsis}}</a></h4>
+          <h4 class="click-here"><a href="#questions/{{inquiry.title}}">{{inquiry.title}}</a></h4>
           <p>{{inquiry.body}}</p>
           <div class="pull-right">
             <author>{{inquiry.created_by}}</author>
@@ -46,7 +46,7 @@
     </section>
     <!--End of Main Bar -->
     <div class="sideBar">
-      <h2 class="numberOfQuestions">{{question.inquiries.length}}</h2>
+      <h2 class="numberOfQuestions">{{question.numberOf}}</h2>
       <h4>questions</h4>
 
 

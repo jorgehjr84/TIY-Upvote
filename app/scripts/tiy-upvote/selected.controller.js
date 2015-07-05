@@ -20,6 +20,5 @@
           console.log(response.data);
           self.inquiry = response.data;
         });
-      console.log($routeParams);
     }); // END SelectedController
 })();
