@@ -11,8 +11,10 @@
  </div> <!--End of a single answer-->
 </section>
 
-<form class="answer-form">
-  <h3>Your Answer</h3>
-  <textarea class="form-control" name="textarea" rows="10" cols="50">Write something here</textarea>
+<form class="answer-form" ng-submit="submitAnswer()">
+  <h4>Your Answer</h4>
+  <textarea class="form-control" name="textarea" ng-model="answer.body" rows="10" cols="50">Write something here</textarea>
+  <h4>Your name</h4>
+  <input class="form-control" name="author" ng-model="answer.created_by" placeholder="Write your name here"></input>
   <button class="btn btn-primary">Post Your Answer</button>
 </form>
