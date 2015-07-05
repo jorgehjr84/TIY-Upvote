@@ -11,7 +11,7 @@
             create: function(question) {
               return questions.$add(question);
             },
-            get: function(postId) {
+            get: function(questionId) {
               return $firebase(ref.child('questions').child(questionId)).$asObject();
             },
             delete: function(post) {

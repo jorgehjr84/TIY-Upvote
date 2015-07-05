@@ -1,15 +1,7 @@
-<h1>{{selected.inquiry[0].synopsis}}</h1>
-<section class='well well-sm'>
-  <p>{{selected.inquiry[0].body}}</p>
-  <author>{{selected.inquiry[0].created_by}}</author>
-</section>
-<section>
-  <h2>{{selected.inquiry[0].answers.length}} Answers</h2>
-  <div class='well well-sm' ng-repeat="answer in selected.inquiry[0].answers">
-    <p>{{answer.body}}</p>
-    <author>{{answer.created_by}}</author> <!--End of answer text-->
-  </div> <!--End of a single answer-->
-</section>
+<div>
+  <a ng-href="{{ question.url }}">{{ question.title }}</a>
+</div>
+
 <form class="answer-form">
   <h2>Your Answer</h2>
   <textarea class="form-control" name="textarea" rows="10" cols="50">Write something here</textarea>

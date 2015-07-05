@@ -15,8 +15,8 @@
     .config(function($routeProvider){
       $routeProvider.when('/questions', {
         templateUrl: 'views/questions.html',
-        controller: 'QuestionsController',
-        controllerAs: 'question'
+        controller: 'SubmitController',
+        controllerAs: 'submission'
       });
 
       $routeProvider.when('/users/:user', {
@@ -31,7 +31,7 @@
         controllerAs: 'submission'
       });
 
-      $routeProvider.when('/questions/:question', {
+      $routeProvider.when('/questions/:questionId', {
         templateUrl: 'views/selected.html',
         controller: 'SelectedController',
         controllerAs: 'selected'
