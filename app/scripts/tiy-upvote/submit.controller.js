@@ -9,12 +9,15 @@
         title: ''
       };
 
-      $scope.submitPost = function() {
+      $scope.submitQuestion = function() {
         $scope.questions.push($scope.question);
         $scope.question = {
           url: 'http://',
           title: ''
         };
+      };
+      $scope.deleteQuestion = function(index) {
+        $scope.questions.splice(index, 1);
       };
     });
 })();

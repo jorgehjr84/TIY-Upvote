@@ -1,5 +1,9 @@
+<div ng-repeat="question in questions">
+<a ng-href="{{ question.url }}">{{ question.title }}</a>
+<a ng-click="deleteQuestion($index)">delete</a>
+</div>
 
-    <form>
+    <form ng-submit="submitQuestion()">
       <div class="title">
         <span>
           <strong>Title</strong>
@@ -26,3 +30,5 @@
 
       <button type="submit" value="Add Question" class="btn btn-primary">Post Your Question</button>
     </form>
+    Questions: {{ questions }}<br />
+    Question: {{ question }}
