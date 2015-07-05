@@ -7,14 +7,16 @@
 
       $scope.question = {
         url: 'http://',
-        'title': ''
+        'title': '',
+        'body': ''
       };
 
       $scope.submitQuestion = function() {
         Question.create($scope.question).then(function() {
           $scope.question = {
             url: 'http://',
-            'title': ''
+            'title': '',
+            'body': ''
           };
         });
       };
