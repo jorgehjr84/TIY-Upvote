@@ -6,13 +6,14 @@
     "angular": "~1.4.1",
     "angular-route": "~1.4.1",
     "restangular": "~1.5.1",
-    "firebase": "~2.2.7"
+    "firebase": "~2.2.7",
+    "angularfire": "0.8.2"
   },
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
   },
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "https://github.com/jorgehjr84/TIY-Upvote",
   "authors": [
     "Jorge Hernandez <jorge_l_hernandez@yahoo.com>"

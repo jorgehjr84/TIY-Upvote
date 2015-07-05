@@ -1,27 +1,25 @@
 
-    <form>
+    <form ng-submit="submitQuestion()">
       <div class="title">
-        <span>
-          <strong>Title</strong>
-        </span>
-        <input type="text" class="form-control" id="phil-input" placeholder="What's your programming question? Be specific.">
+        <h3>Title</h3>
+        <input type="text" class="form-control" id="phil-input" ng-model="question.title" placeholder="What's your programming question? Be specific." />
       </div>
 
-      <textarea class="form-control" data-provide="markdown" rows="10"></textarea>
+      <textarea class="form-control" data-provide="markdown" rows="10" ng-model="question.body"></textarea>
       <br>
 
 
-      <strong>Tags</strong>
-      <br>
-      <input type="text" class="form-control">
-      <br>
+<!--       <strong>Tags</strong>
+<br>
+<input type="text" class="form-control" />
+<br>
 
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value=""> Send me new responses to my posts via email
-          <a href="#">(settings)</a>
-        </label>
-      </div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value=""> Send me new responses to my posts via email
+    <a href="#">(settings)</a>
+  </label>
+</div> -->
 
-      <button type="button" class="btn btn-primary">Post Your Question</button>
+      <button type="submit" value="Add Question" class="btn btn-primary">Post Your Question</button>
     </form>

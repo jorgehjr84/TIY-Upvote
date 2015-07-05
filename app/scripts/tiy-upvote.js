@@ -2,12 +2,16 @@
 (function(){
   'use strict';
 
-  angular.module('tiy-upvote', [ 'ngRoute', 'restangular' ])
+  angular.module('tiy-upvote', [
+    'ngRoute',
+    'restangular',
+    'firebase'
+  ])
     .config(function($routeProvider){
       $routeProvider.when('/questions', {
         templateUrl: 'views/questions.html',
-        controller: 'QuestionsController',
-        controllerAs: 'question'
+        controller: 'SubmitController',
+        controllerAs: 'submission'
       });
 
       $routeProvider.when('/users/:user', {
@@ -17,12 +21,12 @@
       });
 
       $routeProvider.when('/questions/ask', {
-        templateUrl: 'views/submit.html'
-        // controller: 'SubmitController',
-        // controllerAs: 'submission'
+        templateUrl: 'views/submit.html',
+        controller: 'SubmitController',
+        controllerAs: 'submission'
       });
 
-      $routeProvider.when('/questions/:question', {
+      $routeProvider.when('/questions/:questionId', {
         templateUrl: 'views/selected.html',
         controller: 'SelectedController',
         controllerAs: 'selected'
@@ -59,5 +63,5 @@
         return self.username !== 0;
       }; // this.setUser
     }); // END MainController
-
+angular.module('tiy-upvote').constant('FIREBASE_URL', 'https://gatorpazz-tiy-upvote.firebaseio.com/');
 })();

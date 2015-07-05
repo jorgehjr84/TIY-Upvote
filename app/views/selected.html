@@ -1,17 +1,20 @@
-<h1>{{selected.inquiry[0].synopsis}}</h1>
+<h3>{{question.title}}</h3>
 <section class='well well-sm'>
-  <p>{{selected.inquiry[0].body}}</p>
-  <author>{{selected.inquiry[0].created_by}}</author>
+ <p>{{question.body}}</p>
+ <author>{{selected.inquiry.created_by}}</author>
 </section>
 <section>
-  <h2>{{selected.inquiry[0].answers.length}} Answers</h2>
-  <div class='well well-sm' ng-repeat="answer in selected.inquiry[0].answers">
-    <p>{{answer.body}}</p>
-    <author>{{answer.created_by}}</author> <!--End of answer text-->
-  </div> <!--End of a single answer-->
+ <h3>{{selected.inquiry.answers.length}} Answers</h3>
+ <div class='well well-sm' ng-repeat="answer in question.answers">
+   <p>{{answer.body}}</p>
+   <author><small>{{answer.created_by}}</small></author> <!--End of answer text-->
+ </div> <!--End of a single answer-->
 </section>
-<form class="answer-form">
-  <h2>Your Answer</h2>
-  <textarea class="form-control" name="textarea" rows="10" cols="50">Write something here</textarea>
+
+<form class="answer-form" ng-submit="submitAnswer()">
+  <h4>Your Answer</h4>
+  <textarea class="form-control" name="textarea" ng-model="answer.body" rows="10" cols="50">Write something here</textarea>
+  <h4>Your name</h4>
+  <input class="form-control" name="author" ng-model="answer.created_by" placeholder="Write your name here"></input>
   <button class="btn btn-primary">Post Your Answer</button>
 </form>
