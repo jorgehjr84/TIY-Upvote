@@ -1,4 +1,4 @@
-/* global angular */
+/* global angular _ */
 (function() {
   'use strict';
   angular.module('tiy-upvote')
@@ -27,5 +27,5 @@
           self.numberOf = _.size(response.data);
         });
 
-    })
+    });
 })();
