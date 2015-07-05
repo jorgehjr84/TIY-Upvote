@@ -1,8 +1,24 @@
 /* global angular */
 (function() {
-  'use strict';
-  angular.module('tiy-upvote')
-    .factory('Question', function ($resource) {
-      return $resource('https://gatorpazz-tiy-upvote.firebaseio.com/questions/:id.json');
-    })
-})();
+    'use strict';
+    angular.module('tiy-upvote')
+      .factory('Question', function($firebase, FIREBASE_URL) {
+          var ref = new Firebase(FIREBASE_URL);
+          var questions = $firebase(ref.child('questions')).$asArray();
+
+          var Question = {
+            all: questions,
+            create: function(question) {
+              return questions.$add(question);
+            },
+            get: function(postId) {
+              return $firebase(ref.child('questions').child(questionId)).$asObject();
+            },
+            delete: function(post) {
+              return questions.$remove(post);
+            }
+          };
+
+          return Question;
+        });
+      })();
