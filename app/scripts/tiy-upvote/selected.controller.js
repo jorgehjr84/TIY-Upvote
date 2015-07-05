@@ -13,7 +13,12 @@
 
       $scope.submitAnswer = function() {
         Question.createAnswer($routeParams.questionId, $scope.answer);
+        $scope.answer = {
+          'created_by': '',
+          'body': ''
+        };
       };
+
     });
 
 })();
