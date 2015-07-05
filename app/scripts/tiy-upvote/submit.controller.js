@@ -2,13 +2,14 @@
 (function() {
   'use strict';
   angular.module('tiy-upvote')
-    .controller('SubmitController', function($scope, $location, Question) {
+    .controller('SubmitController', function($scope, $location, Question, $http) {
       $scope.questions = Question.all;
-
+      var self = this;
+      this.numberOf = 0;
       $scope.question = {
-        url: 'http://',
         'title': '',
-        'body': ''
+        'body': '',
+        'answers': ''
       };
 
       $scope.submitQuestion = function() {
@@ -20,6 +21,11 @@
       $scope.deleteQuestion = function(question) {
         Question.delete(question);
       };
+
+      $http.get('https://gatorpazz-tiy-upvote.firebaseio.com/questions/.json')
+        .then(function(response) {
+          self.numberOf = _.size(response.data);
+        });
 
     })
 })();

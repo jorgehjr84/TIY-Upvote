@@ -3,20 +3,8 @@
 
   <div class="content row">
     <section class="mainBar">
-      <nav class="subHeader">
-        <h3>All Questions
-        </h3>
-        <ul class="nav nav-tabs mainBarMenus">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#/newest">newest</a></li>
-          <li role="presentation"><a href="#/featured">featured</a></li>
-          <li role="presentation"><a href="#/frequent">frequent</a></li>
-          <li role="presentation"><a href="#/votes">votes</a></li>
-          <li role="presentation"><a href="#/active">active</a></li>
-          <li role="presentation"><a href="#/answered">answered</a></li>
-        </ul>
+        <h3>All Questions</h3>
 
-      </nav>
       <section class="row well stuff" ng-repeat="question in questions">
        <div class="stats">
          <span>
@@ -24,7 +12,7 @@
            <small>votes</small><br>
          </span>
          <span>
-         <big>0</big><br>
+         <big>{{ question.answerNumber }}</big><br>
          <small>answers</small><br>
          </span>
          <span>
@@ -48,7 +36,7 @@
     </section>
     <!--End of Main Bar -->
     <div class="sideBar">
-      <h2 class="numberOfQuestions">{{ count }}</h2>
+      <h2 class="numberOfQuestions">{{ submission.numberOf }}</h2>
       <h4>questions</h4>
 
 
