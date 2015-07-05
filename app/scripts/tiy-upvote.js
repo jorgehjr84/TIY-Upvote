@@ -2,7 +2,15 @@
 (function(){
   'use strict';
 
-  angular.module('tiy-upvote', [ 'ngRoute', 'restangular' ])
+  angular.module('tiy-upvote', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch',
+    'restangular'
+  ])
     .config(function($routeProvider){
       $routeProvider.when('/questions', {
         templateUrl: 'views/questions.html',
