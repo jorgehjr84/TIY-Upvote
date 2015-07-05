@@ -2,7 +2,7 @@
 (function() {
   'use strict';
   angular.module('tiy-upvote')
-    .controller('SubmitController', function($scope) {
+    .controller('SubmitController', function($scope, Post) {
       $scope.questions = [];
       $scope.question = {
         url: 'http://',
