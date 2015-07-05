@@ -2,7 +2,7 @@
 (function() {
   'use strict';
   angular.module('tiy-upvote')
-    .controller('SubmitController', function($scope, Question) {
+    .controller('SubmitController', function($scope, $location, Question) {
       $scope.questions = Question.all;
 
       $scope.question = {
@@ -12,12 +12,8 @@
       };
 
       $scope.submitQuestion = function() {
-        Question.create($scope.question).then(function() {
-          $scope.question = {
-            url: 'http://',
-            'title': '',
-            'body': ''
-          };
+        Question.create($scope.question).then(function(ref) {
+          $location.path('/questions/' + ref.name());
         });
       };
 
