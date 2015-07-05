@@ -9,7 +9,8 @@
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'restangular'
+    'restangular',
+    'firebase'
   ])
     .config(function($routeProvider){
       $routeProvider.when('/questions', {
@@ -67,5 +68,5 @@
         return self.username !== 0;
       }; // this.setUser
     }); // END MainController
-
+angular.module('tiy-upvote').constant('FIREBASE_URL', 'https://gatorpazz-tiy-upvote.firebaseio.com/');
 })();

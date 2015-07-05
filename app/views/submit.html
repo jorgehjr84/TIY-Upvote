@@ -1,6 +1,6 @@
-<div ng-repeat="question in questions">
+<div ng-repeat="(questionId, question) in questions">
 <a ng-href="{{ question.url }}">{{ question.title }}</a>
-<a ng-click="deleteQuestion($index)">delete</a>
+<a ng-click="deleteQuestion(questionId)">delete</a>
 </div>
 
     <form ng-submit="submitQuestion()">
