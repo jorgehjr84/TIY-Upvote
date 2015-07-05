@@ -3,12 +3,7 @@
   'use strict';
 
   angular.module('tiy-upvote', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'restangular',
     'firebase'
   ])
