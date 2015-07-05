@@ -16,6 +16,9 @@
             },
             delete: function(question) {
               return questions.$remove(question);
+            },
+            createAnswer: function (question, answer) {
+              return $firebase(ref.child('questions/' + question + '/answers')).$asArray().$add(answer);
             }
           };
 

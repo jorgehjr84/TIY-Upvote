@@ -8,16 +8,8 @@
       <section class="row well stuff" ng-repeat="question in questions">
        <div class="stats">
          <span>
-           <big>0</big><br>
-           <small>votes</small><br>
-         </span>
-         <span>
          <big>{{ question.answerNumber }}</big><br>
          <small>answers</small><br>
-         </span>
-         <span>
-           <big>2</big><br>
-           <small>views</small>
          </span>
        </div>
        <div class="question-summary">
@@ -25,7 +17,7 @@
          </div>
          <h4 class="click-here"><a ng-href="#/questions/{{ question.$id }}">{{ question.title }}</a></h4>
          <p>{{ question.body }}</p>
-         <p><a ng-click="deleteQuestion(question)">delete</a></p>
+         <p class="pull-right"><a ng-click="deleteQuestion(question)">delete</a></p>
          <div class="pull-right">
            <author>{{inquiry.created_by}}</author>
            <time>{{inquiry.timestamp}}</time>
