@@ -37,7 +37,6 @@
     <ul class="nav nav-pills pull-right">
       <li><a href="#questions">Questions</a></li>
       <!-- <li><a href="#users/:user">User</a></li> -->
-      <li><a href="#questions/:question">Detail</a></li>
       <li><a href="#questions/ask">Ask Question</a></li>
       <li ng-hide="app.setUser()"><a href="#questions" ng-click="app.login()">Log In</a></li>
       <li ng-show="app.setUser()"><a href="#users/:user">Hello, {{app.username}}!</a></li>
@@ -57,6 +56,7 @@
   <script src="/bower_components/lodash/lodash.js"></script>
   <script src="/bower_components/restangular/dist/restangular.js"></script>
   <script src="/bower_components/firebase/firebase.js"></script>
+  <script src="/bower_components/angularfire/dist/angularfire.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -77,8 +77,9 @@
 
   <!-- build:js scripts/main.js -->
   <script src="scripts/tiy-upvote.js"></script>
-  <script src="scripts/tiy-upvote/questions.controller.js"></script>
+  <script src="scripts/services/question.js"></script>
   <script src="scripts/tiy-upvote/selected.controller.js"></script>
+  <script src="scripts/tiy-upvote/submit.controller.js"></script>
   <!-- endbuild -->
 </body>
 
