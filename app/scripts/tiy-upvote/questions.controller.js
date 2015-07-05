@@ -20,10 +20,10 @@
         });
     }); // End of QuestionsController
 
-  $('.stuff')
-    .on('click', '.click-here', function(){
-      console.log("hello");
-      $('html, body').animate({ scrollTop: 0 }, 500);
-    });
+  // $('.stuff')
+  //   .on('click', '.click-here', function(){
+  //     console.log("hello");
+  //     $('html, body').animate({ scrollTop: 0 }, 500);
+  //   });
 
 })();
