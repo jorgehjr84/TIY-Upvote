@@ -25,9 +25,9 @@
       });
 
       $routeProvider.when('/questions/ask', {
-        templateUrl: 'views/submit.html'
-        // controller: 'SubmitController',
-        // controllerAs: 'submission'
+        templateUrl: 'views/submit.html',
+        controller: 'SubmitController',
+        controllerAs: 'submission'
       });
 
       $routeProvider.when('/questions/:question', {

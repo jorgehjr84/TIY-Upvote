@@ -4,7 +4,8 @@
         <span>
           <strong>Title</strong>
         </span>
-        <input type="text" class="form-control" id="phil-input" placeholder="What's your programming question? Be specific.">
+        <input type="text" class="form-control" id="phil-input" ng-model="question.title" placeholder="What's your programming question? Be specific." />
+        <input type="text" ng-model="question.url" />
       </div>
 
       <textarea class="form-control" data-provide="markdown" rows="10"></textarea>
@@ -13,7 +14,7 @@
 
       <strong>Tags</strong>
       <br>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" />
       <br>
 
       <div class="checkbox">
@@ -23,5 +24,5 @@
         </label>
       </div>
 
-      <button type="button" class="btn btn-primary">Post Your Question</button>
+      <button type="submit" value="Add Question" class="btn btn-primary">Post Your Question</button>
     </form>
