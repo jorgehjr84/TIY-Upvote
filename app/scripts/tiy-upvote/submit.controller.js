@@ -4,6 +4,11 @@
   angular.module('tiy-upvote')
     .controller('SubmitController', function($scope, $location, Question) {
       $scope.questions = Question.all;
+      console.log(Question);
+      $scope.count = 0;
+      $scope.lengthOf = _.forEach(Question.all, function(question) {
+        $scope.count++;
+      });
 
       $scope.question = {
         url: 'http://',
